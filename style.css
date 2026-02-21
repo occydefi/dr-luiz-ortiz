@@ -461,6 +461,38 @@ h1 {
     font-weight: 500;
 }
 
+/* ===== EVENTO / ATUAÇÃO PROFISSIONAL ===== */
+.evento-card {
+    margin-top: 2.5rem;
+    background: linear-gradient(135deg, var(--branco) 0%, var(--cinza-claro) 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px var(--sombra-media);
+}
+
+.evento-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.evento-text {
+    padding: 2rem 2.5rem;
+}
+
+.evento-text h3 {
+    font-size: 1.4rem;
+    color: var(--azul-escuro);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.evento-text p {
+    color: var(--cinza);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
 /* ===== ÁREAS DE ATUAÇÃO ===== */
 .areas-grid {
     display: grid;
