@@ -518,6 +518,115 @@ footer .dev-credit {
     font-style: italic;
 }
 
+/* ===== CARROSSEL DE RESULTADOS ===== */
+.carousel-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px var(--sombra-media);
+}
+
+.carousel-item {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.carousel-caption {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-principal) 100%);
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 1.05rem;
+    border-radius: 0 0 16px 16px;
+    margin-top: -5px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--azul-escuro);
+    border: none;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    line-height: 1;
+    font-weight: 300;
+}
+
+.carousel-btn:hover {
+    background: var(--branco);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-dots {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: var(--cinza-medio);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: var(--azul-principal);
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 640px) {
     body {
