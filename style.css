@@ -518,6 +518,54 @@ footer .dev-credit {
     font-style: italic;
 }
 
+/* ===== ESTRUTURA / CENTRO CIRÚRGICO ===== */
+.estrutura-card {
+    background: linear-gradient(135deg, var(--cinza-claro) 0%, var(--branco) 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px var(--sombra-media);
+}
+
+.estrutura-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.estrutura-text {
+    padding: 2.5rem;
+}
+
+.estrutura-text h3 {
+    font-size: 1.5rem;
+    color: var(--azul-escuro);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.estrutura-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.estrutura-text ul li {
+    color: var(--cinza);
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.estrutura-text ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--azul-principal);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
 /* ===== CARROSSEL DE RESULTADOS ===== */
 .carousel-container {
     max-width: 600px;
