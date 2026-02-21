@@ -518,6 +518,23 @@ footer .dev-credit {
     font-style: italic;
 }
 
+/* ===== LOGO E IDENTIDADE ===== */
+.logo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--cinza-claro) 0%, var(--branco) 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px var(--sombra-media);
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
 /* ===== ESTRUTURA / CENTRO CIRÚRGICO ===== */
 .estrutura-card {
     background: linear-gradient(135deg, var(--cinza-claro) 0%, var(--branco) 100%);
