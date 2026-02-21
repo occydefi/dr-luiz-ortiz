@@ -601,17 +601,6 @@ footer .dev-credit {
     border-radius: 16px;
 }
 
-.carousel-caption {
-    text-align: center;
-    padding: 1rem;
-    background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-principal) 100%);
-    color: var(--branco);
-    font-weight: 600;
-    font-size: 1.05rem;
-    border-radius: 0 0 16px 16px;
-    margin-top: -5px;
-}
-
 .carousel-btn {
     position: absolute;
     top: 50%;
